@@ -1,0 +1,17 @@
+Exercise 1 : 
+1)setImmediate is used to push a task in the poll queue immediately while setTimeout schedules after how many ms the task will be pushed in the Timer queue
+
+2)process.nextTick add a task in the nextTick : the queue with highest priority.
+setImmediate is used to push a task in the poll queue which is a macrotask queue
+
+3) Code module : http, url, query string, path, fs, util, assert, buffer, os
+Global objects : __filename, __dirname, setTimeout, setInterval, Process, Console
+
+Exercise2: 
+async function factorial(a){
+    if(a<=1)return 1;
+    const a_1 = await factorial(a-1);
+    return a*a_1;
+}
+ 
+factorial(10).then(console.log)
